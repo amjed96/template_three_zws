@@ -608,8 +608,99 @@ Font color: rgb(102, 102, 102)
   font-weight: 400;
   line-height: 24px;
   color: rgb(119, 119, 119);
+  margin-bottom: 0;
 }
 /* End Testimonials */
+/* Start Members */
+.members {
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
+}
+.members .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+.members .card {
+  position: relative;
+  transition: var(--main-transition);
+  overflow: hidden;
+}
+.members .card:hover {
+  filter: grayscale(100%);
+}
+.members .card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  background-color: var(--section-background);
+  border-radius: 10px;
+  width: calc(100% - 60px);
+  z-index: -2;
+}
+.members .card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  background-color: #e4e4e4;
+  border-radius: 10px;
+  width: 0;
+  z-index: -1;
+  transition: var(--main-transition);
+}
+.members .card:hover::after{
+  /*right: 0;*/
+  width: calc(100% - 60px);
+}
+.members .card .data {
+  padding-top: 60px;
+  display: flex;
+  align-items: center;
+}
+.members .card .data img {
+  width: calc(100% - 60px);
+  transition: var(--main-transition);
+  border-radius: 10px;
+}
+.members .card .data .social {
+  width: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.members .card .data .social a {
+  width: 60px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #777;
+}
+.members .card .data .social a:hover i {
+  color: var(--main-color);
+}
+.members .card .info {
+  padding-left: 80px;
+}
+.members .card .info h3 {
+  margin: 22px 0 0;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 25.3px;
+  color: var(--main-color);
+}
+.members .card .info p {
+  margin: 10px 0 25px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.4px;
+}
+/* End Members */
 /* Start Animations */
 @keyframes land-up-down {
     0% {

@@ -701,6 +701,140 @@ Font color: rgb(102, 102, 102)
   line-height: 18.4px;
 }
 /* End Members */
+/* Start Services */
+.services {
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
+  background-color: var(--section-background);
+}
+.services .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+}
+.services .card {
+  counter-increment: cards;
+  background-color: white;
+  box-shadow: 0 12px 20px 0 rgb(0 0 0 / 13%), 
+              0 2px 4px 0 rgb(0 0 0 / 12%);
+  transition: var(--main-transition);
+  position: relative;
+}
+.services .card::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--main-color);
+  height: 3px;
+  width: 0;
+  transition: var(--main-transition);
+}
+.services .card:hover {
+  transform: translateY(-10px);
+}
+.services .card:hover::before {
+  width: 100%;
+}
+.services .card i {
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #d5d5d5;
+}
+.services .card h3 {
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--main-color);
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.services .card .info {
+  padding: 15px;
+  background-color: #f9f9f9;
+  text-align: right;
+  position: relative;
+}
+.services .card .info::before {
+  content: "0"counter(cards);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 80px;
+  background-color: var(--main-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  padding-right: 15px;
+}
+.services .card .info::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 80px;
+  height: 100%;
+  width: 50px;
+  background-color: #d5d5d5;
+  transform: skewX(-30deg);
+}
+.services .card .info .details {
+  color: var(--main-color);
+}
+/* End Services */
+/* Start Skills */
+.skills {
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
+}
+.skills .container {
+  display: flex;
+}
+.skills .prog-container {
+  flex: 1;
+}
+@media (max-width: 991px) {
+  .skills .container img {
+    display: none;
+  }
+}
+.skills .prog-container .prog-holder {
+
+}
+.skills .prog-container .prog-holder h3 {
+  font-size: 18.72px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.skills .prog-container .prog-holder h3 span {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--main-color);
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 3px 5px;
+}
+.skills .prog-container .prog-holder .prog {
+  height: 30px;
+  background-color: #eee;
+  position: relative;
+}
+.skills .prog-container .prog-holder .prog span {
+  height: 100%;
+  background-color: var(--main-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* End Skills */
 /* Start Animations */
 @keyframes land-up-down {
     0% {

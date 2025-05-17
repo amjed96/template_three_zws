@@ -1,673 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Elzero</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/elzero.css">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/elzero.css" />
     <!-- Font Awesome -->
     <link rel="stylesheet" href="css/all.min.css" />
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!-- Start Header -->
     <div class="header" id="header">
-        <div class="container">
-          <a href="#" class="logo">Elzero</a>
-          <ul class="main-nav">
-            <li><a href="#articles">Articles</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#features">Features</a></li>
-            <li>
-              <a href="#">Other Links</a>
-              <!-- Start Megamenu -->
-              <div class="mega-menu">
-                <div class="image">
-                  <img decoding="async" src="imgs/megamenu.png" alt="" />
-                </div>
-                <ul class="links">
-                  <li>
-                    <a href="#testimonials"><i class="far fa-comments fa-fw"></i> Testimonials</a>
-                  </li>
-                  <li>
-                    <a href="#team"><i class="far fa-user fa-fw"></i> Team Members</a>
-                  </li>
-                  <li>
-                    <a href="#services"><i class="far fa-building fa-fw"></i> Services</a>
-                  </li>
-                  <li>
-                    <a href="#our-skills"><i class="far fa-check-circle fa-fw"></i> Our Skills</a>
-                  </li>
-                  <li>
-                    <a href="#work-steps"><i class="far fa-clipboard fa-fw"></i> How It Works</a>
-                  </li>
-                </ul>
-                <ul class="links">
-                  <li>
-                    <a href="#events"><i class="far fa-calendar-alt fa-fw"></i> Events</a>
-                  </li>
-                  <li>
-                    <a href="#pricing"><i class="fas fa-server fa-fw"></i> Pricing Plans</a>
-                  </li>
-                  <li>
-                    <a href="#video"><i class="far fa-play-circle fa-fw"></i> Top Videos</a>
-                  </li>
-                  <li>
-                    <a href="#stats"><i class="far fa-chart-bar fa-fw"></i> Stats</a>
-                  </li>
-                  <li>
-                    <a href="#discount"><i class="fas fa-percent fa-fw"></i> Request A Discount</a>
-                  </li>
-                </ul>
+      <div class="container">
+        <a href="#" class="logo">Elzero</a>
+        <ul class="main-nav">
+          <li><a href="#articles">Articles</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#features">Features</a></li>
+          <li>
+            <a href="#">Other Links</a>
+            <!-- Start Megamenu -->
+            <div class="mega-menu">
+              <div class="image">
+                <img src="./imgs/megamenu.png" alt="Megamenu" />
               </div>
-              <!-- End Megamenu -->
-            </li>
-          </ul>
-        </div>
+              <ul class="links">
+                <li>
+                  <a href="#">
+                    <i class="far fa-comments fa-fw"></i>
+                    Testimonials
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="far fa-user fa-fw"></i>
+                    Team Members
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="far fa-building fa-fw"></i>
+                    Services
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="far fa-check-circle fa-fw"></i>
+                    Our Skills
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="far fa-clipboard fa-fw"></i>
+                    How It Works
+                  </a>
+                </li>
+              </ul>
+              <ul class="links">
+                <li>
+                  <a href="#">
+                    <i class="far fa-calendar-alt fa-fw"></i>
+                    Events
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fas fa-server fa-fw"></i>
+                    Pricing Plans
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="far fa-play-circle fa-fw"></i>
+                    Top Videos
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="far fa-chart-bar fa-fw"></i>
+                    Stats
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fas fa-percent fa-fw"></i>
+                    Request A Discount
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- End Megamenu -->
+          </li>
+        </ul>
+      </div>
     </div>
     <!-- End Header -->
     <!-- Start Landing -->
-    <div class="landing">
+    <div class="landing" id="landing">
       <div class="container">
         <div class="landing-text">
-          <h1>Welcome, To Elzero World</h1>
-          <p>
-            Here I am gonna share everything about my life. 
-            Books I am reading, Games I am playing, Stories and Events
-          </p>
+          <h3 class="title">Welcome, to Elzero World</h3>
+          <span class="description">
+            Here I am gonna share everything about my life. Books I am reading,
+            Games I am playing, Stories and Events
+          </span>
         </div>
         <div class="landing-image">
-          <img src="imgs/landing-image.png" alt="">
+          <img src="./imgs/landing-image.png" alt="landing image" />
         </div>
       </div>
-      <a href="#articles">
+      <a href="#articles" class="go-down">
         <i class="fas fa-angle-double-down fa-2x"></i>
       </a>
     </div>
     <!-- End Landing -->
-    <!-- Start Articles -->
-    <div class="articles" id="articles">
-      <h2 class="main-title">
-        Articles
-      </h2>
-      <div class="container">
-        <div class="card">
-          <img src="imgs/cat-01.jpg" alt="Article1">
-          <div class="content">
-            <h3>Test Title</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
-          </div>
-          <div class="info">
-            <a href="#">Read More</a>
-            <i class="fas fa-long-arrow-alt-right"></i>
-          </div>
-        </div>
-        <div class="card">
-          <img src="imgs/cat-02.jpg" alt="Article2">
-          <div class="content">
-            <h3>Test Title</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
-          </div>
-          <div class="info">
-            <a href="#">Read More</a>
-            <i class="fas fa-long-arrow-alt-right"></i>
-          </div>
-        </div>
-        <div class="card">
-          <img src="imgs/cat-03.jpg" alt="Article3">
-          <div class="content">
-            <h3>Test Title</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
-          </div>
-          <div class="info">
-            <a href="#">Read More</a>
-            <i class="fas fa-long-arrow-alt-right"></i>
-          </div>
-        </div>
-        <div class="card">
-          <img src="imgs/cat-04.jpg" alt="Article4">
-          <div class="content">
-            <h3>Test Title</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
-          </div>
-          <div class="info">
-            <a href="#">Read More</a>
-            <i class="fas fa-long-arrow-alt-right"></i>
-          </div>
-        </div>
-        <div class="card">
-          <img src="imgs/cat-05.jpg" alt="Article5">
-          <div class="content">
-            <h3>Test Title</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
-          </div>
-          <div class="info">
-            <a href="#">Read More</a>
-            <i class="fas fa-long-arrow-alt-right"></i>
-          </div>
-        </div>
-        <div class="card">
-          <img src="imgs/cat-06.jpg" alt="Article6">
-          <div class="content">
-            <h3>Test Title</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
-          </div>
-          <div class="info">
-            <a href="#">Read More</a>
-            <i class="fas fa-long-arrow-alt-right"></i>
-          </div>
-        </div>
-        <div class="card">
-          <img src="imgs/cat-07.jpg" alt="Article7">
-          <div class="content">
-            <h3>Test Title</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
-          </div>
-          <div class="info">
-            <a href="#">Read More</a>
-            <i class="fas fa-long-arrow-alt-right"></i>
-          </div>
-        </div>
-        <div class="card">
-          <img src="imgs/cat-08.jpg" alt="Article8">
-          <div class="content">
-            <h3>Test Title</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
-          </div>
-          <div class="info">
-            <a href="#">Read More</a>
-            <i class="fas fa-long-arrow-alt-right"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="spikes"></div>
-    <!-- End Articles -->
-    <!-- Start Gallery -->
-    <div class="gallery" id="gallery">
-      <h2 class="main-title">Gallery</h2>
-      <div class="container">
-        <div class="card">
-          <div class="image">
-            <img src="imgs/gallery-01.png" alt="gallery1">
-          </div>
-        </div>
-        <div class="card">
-          <div class="image">
-            <img src="imgs/gallery-02.png" alt="gallery2">
-          </div>
-        </div>
-        <div class="card">
-          <div class="image">
-            <img src="imgs/gallery-03.jpg" alt="gallery3">
-          </div>
-        </div>
-        <div class="card">
-          <div class="image">
-            <img src="imgs/gallery-04.png" alt="gallery4">
-          </div>
-        </div>
-        <div class="card">
-          <div class="image">
-            <img src="imgs/gallery-05.jpg" alt="gallery5">
-          </div>
-        </div>
-        <div class="card">
-          <div class="image">
-            <img src="imgs/gallery-06.png" alt="gallery6">
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End Gallery -->
-    <!-- Start Features -->
-    <div class="features">
-      <h2 class="main-title">Features</h2>
-      <div class="container">
-        <div class="card card-one">
-          <div class="image">
-            <img src="imgs/features-01.jpg" alt="feat1">
-          </div>
-          <h2 class="feat-title">Quality</h2>
-          <p class="feat-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit harum hic veniam eligendi minima
-          </p>
-          <a href="#" class="more">More</a>
-        </div>
-        <div class="card card-two">
-          <div class="image">
-            <img src="imgs/features-02.jpg" alt="feat2">
-          </div>
-          <h2 class="feat-title">Time</h2>
-          <p class="feat-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit harum hic veniam eligendi minima
-          </p>
-          <a href="#" class="more">More</a>
-        </div>
-        <div class="card card-three">
-          <div class="image">
-            <img src="imgs/features-03.jpg" alt="feat3">
-          </div>
-          <h2 class="feat-title">Passion</h2>
-          <p class="feat-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit harum hic veniam eligendi minima
-          </p>
-          <a href="#" class="more">More</a>
-        </div>
-      </div>
-    </div>
-    <!-- End Features -->
-    <!-- Start Testimonials -->
-    <div class="testimonials" id="testimonials">
-      <h2 class="main-title">Testimonials</h2>
-      <div class="container">
-        <div class="box">
-          <img src="imgs/avatar-01.png" alt="avatar-01">
-          <h3 class="name">Mohamed Farag</h3>
-          <span class="post">Full Stack Developer</span>
-          <div class="rate">
-            <i class="filled fas fa-star"></i>
-            <i class="filled fas fa-star"></i>
-            <i class="filled fas fa-star"></i>
-            <i class="filled fas fa-star"></i>
-            <i class="far fa-star"></i>
-          </div>
-          <p class="content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et reiciendis voluptatum, amet est natus quaerat ducimus
-          </p>
-        </div>
-        <div class="box">
-          <img src="imgs/avatar-02.png" alt="avatar-02">
-          <h3 class="name">Mohamed Ibrahim</h3>
-          <span class="post">Full Stack Developer</span>
-          <div class="rate">
-            <i class="filled fas fa-star"></i>
-            <i class="filled fas fa-star"></i>
-            <i class="filled fas fa-star"></i>
-            <i class="filled fas fa-star"></i>
-            <i class="far fa-star"></i>
-          </div>
-          <p class="content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et reiciendis voluptatum, amet est natus quaerat ducimus
-          </p>
-        </div>
-        <div class="box">
-          <img src="imgs/avatar-03.png" alt="avatar-03">
-          <h3 class="name">Shady Nabil</h3>
-          <span class="post">Full Stack Developer</span>
-          <div class="rate">
-            <i class="filled fas fa-star"></i>
-            <i class="filled fas fa-star"></i>
-            <i class="filled fas fa-star"></i>
-            <i class="filled fas fa-star"></i>
-            <i class="far fa-star"></i>
-          </div>
-          <p class="content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et reiciendis voluptatum, amet est natus quaerat ducimus
-          </p>
-        </div>
-        <div class="box">
-          <img src="imgs/avatar-04.png" alt="avatar-04">
-          <h3 class="name">Amr Hendawy</h3>
-          <span class="post">Full Stack Developer</span>
-          <div class="rate">
-            <i class="filled fas fa-star"></i>
-            <i class="filled fas fa-star"></i>
-            <i class="filled fas fa-star"></i>
-            <i class="filled fas fa-star"></i>
-            <i class="filled fas fa-star"></i>
-          </div>
-          <p class="content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et reiciendis voluptatum, amet est natus quaerat ducimus
-          </p>
-        </div>
-        <div class="box">
-          <img src="imgs/avatar-05.png" alt="avatar-05">
-          <h3 class="name">Sherief Ashraf</h3>
-          <span class="post">Full Stack Developer</span>
-          <div class="rate">
-            <i class="filled fas fa-star"></i>
-            <i class="filled fas fa-star"></i>
-            <i class="filled fas fa-star"></i>
-            <i class="far fa-star"></i>
-            <i class="far fa-star"></i>
-          </div>
-          <p class="content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et reiciendis voluptatum, amet est natus quaerat ducimus
-          </p>
-        </div>
-        <div class="box">
-          <img src="imgs/avatar-06.png" alt="avatar-06">
-          <h3 class="name">Osama Mohamed</h3>
-          <span class="post">Full Stack Developer</span>
-          <div class="rate">
-            <i class="filled fas fa-star"></i>
-            <i class="filled fas fa-star"></i>
-            <i class="filled fas fa-star"></i>
-            <i class="far fa-star"></i>
-            <i class="far fa-star"></i>
-          </div>
-          <p class="content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et reiciendis voluptatum, amet est natus quaerat ducimus
-          </p>
-        </div>
-      </div>
-    </div>
-    <!-- End Testimonials -->
-    <!-- Start Members -->
-    <div class="members" id="members">
-      <h2 class="main-title">Team members</h2>
-      <div class="container">
-        <div class="card">
-          <div class="data">
-            <img src="imgs/team-01.jpg" alt="team-01">
-            <div class="social">
-              <a href="#">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-youtube"></i>
-              </a>
-            </div>
-          </div>
-          <div class="info">
-            <h3>Name</h3>
-            <p>Simple Short Description</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="data">
-            <img src="imgs/team-02.jpg" alt="team-02">
-            <div class="social">
-              <a href="#">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-youtube"></i>
-              </a>
-            </div>
-          </div>
-          <div class="info">
-            <h3>Name</h3>
-            <p>Simple Short Description</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="data">
-            <img src="imgs/team-03.jpg" alt="team-03">
-            <div class="social">
-              <a href="#">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-youtube"></i>
-              </a>
-            </div>
-          </div>
-          <div class="info">
-            <h3>Name</h3>
-            <p>Simple Short Description</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="data">
-            <img src="imgs/team-04.jpg" alt="team-04">
-            <div class="social">
-              <a href="#">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-youtube"></i>
-              </a>
-            </div>
-          </div>
-          <div class="info">
-            <h3>Name</h3>
-            <p>Simple Short Description</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="data">
-            <img src="imgs/team-05.png" alt="team-05">
-            <div class="social">
-              <a href="#">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-youtube"></i>
-              </a>
-            </div>
-          </div>
-          <div class="info">
-            <h3>Name</h3>
-            <p>Simple Short Description</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="data">
-            <img src="imgs/team-06.png" alt="team-06">
-            <div class="social">
-              <a href="#">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-youtube"></i>
-              </a>
-            </div>
-          </div>
-          <div class="info">
-            <h3>Name</h3>
-            <p>Simple Short Description</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="data">
-            <img src="imgs/team-07.jpg" alt="team-07">
-            <div class="social">
-              <a href="#">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-youtube"></i>
-              </a>
-            </div>
-          </div>
-          <div class="info">
-            <h3>Name</h3>
-            <p>Simple Short Description</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="data">
-            <img src="imgs/team-08.jpg" alt="team-08">
-            <div class="social">
-              <a href="#">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-youtube"></i>
-              </a>
-            </div>
-          </div>
-          <div class="info">
-            <h3>Name</h3>
-            <p>Simple Short Description</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End Members -->
-    <!-- Start Services -->
-    <div class="services" id="services">
-      <h2 class="main-title">Services</h2>
-      <div class="container">
-        <div class="card">
-          <i class="service fas fa-user-shield fa-4x"></i>
-          <h3 class="title">Security</h3>
-          <div class="info">
-            <a href="#" class="details">Details</a>
-          </div>
-        </div>
-        <div class="card">
-          <i class="service fas fa-tools fa-4x"></i>
-          <h3 class="title">Fixing Issues</h3>
-          <div class="info">
-            <a href="#" class="details">Details</a>
-          </div>
-        </div>
-        <div class="card">
-          <i class="service fas fa-map-marked-alt fa-4x"></i>
-          <h3 class="title">Location</h3>
-          <div class="info">
-            <a href="#" class="details">Details</a>
-          </div>
-        </div>
-        <div class="card">
-          <i class="service fas fa-laptop-code fa-4x"></i>
-          <h3 class="title">Coding</h3>
-          <div class="info">
-            <a href="#" class="details">Details</a>
-          </div>
-        </div>
-        <div class="card">
-          <i class="service fas fa-palette fa-4x"></i>
-          <h3 class="title">Graphic Design</h3>
-          <div class="info">
-            <a href="#" class="details">Details</a>
-          </div>
-        </div>
-        <div class="card">
-          <i class="service fas fa-bullhorn fa-4x"></i>
-          <h3 class="title">Marketing</h3>
-          <div class="info">
-            <a href="#" class="details">Details</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End Services -->
-    <!-- Start Skills -->
-    <div class="skills" id="skills">
-      <h2 class="main-title">Our Skills</h2>
-      <div class="container">
-        <img src="imgs/skills.png" alt="skills">
-        <div class="prog-container">
-          <div class="prog-holder">
-            <h3>HTML<span>80%</span></h3>
-            <div class="prog">
-              <span style="width: 80%" data-progress="80%"></span>
-            </div>
-          </div>
-          <div class="prog-holder">
-            <h3>CSS<span>85%</span></h3>
-            <div class="prog">
-              <span style="width: 85%" data-progress="85%"></span>
-            </div>
-          </div>
-          <div class="prog-holder">
-            <h3>JavaScript<span>70%</span></h3>
-            <div class="prog">
-              <span style="width: 70%" data-progress="70%"></span>
-            </div>
-          </div>
-          <div class="prog-holder">
-            <h3>Python<span>80%</span></h3>
-            <div class="prog">
-              <span style="width: 80%" data-progress="80%"></span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End Skills -->
-    <!-- Start Steps -->
-    <div class="work-steps" id="work-steps">
-      <h2 class="main-title">How it works</h2>
-      <div class="container">
-        <img src="imgs/work-steps.png" alt="work-steps">
-        <div class="steps">
-          <div class="card">
-            <img src="imgs/work-steps-1.png" alt="step-1">
-            <div class="content">
-              <h3>Business Analysis</h3>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim nesciunt obcaecati quisquam quis laborum recusandae debitis vel
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="imgs/work-steps-2.png" alt="step-2">
-            <div class="content">
-              <h3>Architecture</h3>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim nesciunt obcaecati quisquam quis laborum recusandae debitis vel
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="imgs/work-steps-3.png" alt="step-3">
-            <div class="content">
-              <h3>Development</h3>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim nesciunt obcaecati quisquam quis laborum recusandae debitis vel
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End Steps -->
-</body>
+  </body>
 </html>

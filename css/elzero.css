@@ -9,6 +9,7 @@
   --main-color-alt: #1787e0;
   --main-transition: 0.3s;
   --section-background: #ececec;
+  --section-padding: 100px;
 }
 html {
   scroll-behavior: smooth;
@@ -47,6 +48,50 @@ ul {
   .container {
     width: 1170px;
   }
+}
+/* Main Title */
+.main-title {
+  position: relative;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 10px 20px;
+  margin: 0 auto 80px;
+  border: 2px solid black;
+  width: fit-content;
+  transition: 0.5s;
+}
+.main-title::before,
+.main-title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background-color: var(--main-color-alt);
+  border-radius: 50%;
+  transition: 0.5s;
+  z-index: -1;
+}
+.main-title::before {
+  left: -30px;
+}
+.main-title::after {
+  right: -30px;
+}
+.main-title:hover {
+  transition-delay: 0.5s;
+  color: white;
+  border-color: white;
+}
+.main-title:hover::before {
+  z-index: -1;
+  animation: left-move 0.5s linear forwards;
+}
+.main-title:hover::after {
+  z-index: -1;
+  animation: right-move 0.5s linear forwards;
 }
 /* End Global Rules */
 /* Start Header */
@@ -198,7 +243,7 @@ ul {
   position: absolute;
   bottom: 30px;
   left: 50%;
-  transform: translateY(10px);
+  transform: translateX(-50%);
   color: var(--main-color);
   animation-name: arrow-up-down;
   animation-duration: 1s;
@@ -286,6 +331,12 @@ ul {
   color: var(--main-color);
 }
 /* End Megamenu */
+/* Start Articles */
+.articles {
+}
+.articles .container {
+}
+/* End Articles */
 /* Start Animations*/
 @keyframes land-up-down {
   0% {
@@ -313,6 +364,32 @@ ul {
   }
   100% {
     transform: translateY(0px);
+  }
+}
+@keyframes left-move {
+  50% {
+    left: 0;
+    height: 12px;
+    width: 12px;
+  }
+  100% {
+    left: 0;
+    border-radius: 0;
+    height: 100%;
+    width: 50%;
+  }
+}
+@keyframes right-move {
+  50% {
+    right: 0;
+    height: 12px;
+    width: 12px;
+  }
+  100% {
+    right: 0;
+    border-radius: 0;
+    height: 100%;
+    width: 50%;
   }
 }
 /* End Animations*/

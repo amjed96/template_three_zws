@@ -245,6 +245,8 @@ ul {
   left: 50%;
   transform: translateX(-50%);
   color: var(--main-color);
+}
+.landing .go-down i {
   animation-name: arrow-up-down;
   animation-duration: 1s;
   animation-fill-mode: both;

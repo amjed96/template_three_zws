@@ -336,7 +336,7 @@ ul {
 /* End Megamenu */
 /* Start Articles */
 .articles {
-  padding: var(--section-padding);
+  padding: var(--section-padding) 0;
 }
 .articles .container {
   display: grid;
@@ -395,7 +395,7 @@ ul {
 /* End Articles */
 /* Start Gallery */
 .gallery {
-  padding: var(--section-padding);
+  padding: var(--section-padding) 0;
   background-color: var(--section-background);
 }
 .gallery .container {
@@ -444,7 +444,7 @@ ul {
 /* End Gallery */
 /* Start Features */
 .features {
-  padding: var(--section-padding);
+  padding: var(--section-padding) 0;
 }
 .features .container {
   display: grid;
@@ -576,7 +576,7 @@ ul {
 /* End Features */
 /* Start Testimonials */
 .testimonials {
-  padding: var(--section-padding);
+  padding: var(--section-padding) 0;
   background-color: var(--section-background);
 }
 .testimonials .container {
@@ -620,6 +620,87 @@ ul {
   margin-bottom: 0;
 }
 /* End Testimonials */
+/* Start Team */
+.team {
+  padding: var(--section-padding) 0;
+}
+.team .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 100%;
+}
+.team .box {
+  position: relative;
+  transition: var(--main-transition);
+}
+.team .box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: calc(100% - 60px);
+  height: 100%;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  z-index: -2;
+}
+.team .box::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  background-color: #e4e4e4;
+  border-radius: 10px;
+  transition: var(--main-transition);
+  z-index: -2;
+}
+.team .box:hover .data img {
+  filter: grayscale(1);
+}
+.team .box:hover::after {
+  width: calc(100% - 60px);
+}
+.team .box .data {
+  display: flex;
+  padding-top: 60px;
+}
+.team .box .data img {
+  width: calc(100% - 60px);
+  border-radius: 10px;
+  transition: var(--main-transition);
+}
+.team .box .data .social {
+  display: flex;
+  flex-direction: column;
+  width: 60px;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  z-index: 2;
+}
+.team .data .social a {
+  height: 30px;
+  color: #687c8c;
+}
+.team .social a:hover {
+  color: var(--main-color);
+}
+.team .box .info {
+  margin-left: 80px;
+}
+.team .box .info .title {
+  margin-bottom: 0;
+  color: var(--main-color);
+  font-size: 22px;
+}
+.team .box .info .description {
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+/* End Team */
 /* Start Animations*/
 @keyframes land-up-down {
   0% {

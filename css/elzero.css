@@ -954,6 +954,11 @@ ul {
   text-align: center;
   border: 1px solid #d4d4d4;
   border-radius: 6px;
+  transition: var(--main-transition);
+}
+.events .counter .count:hover,
+.events .counter .count:hover .number {
+  border-color: var(--main-color);
 }
 .events .counter .count span {
   display: block;
@@ -964,6 +969,7 @@ ul {
   color: var(--main-color);
   font-weight: bold;
   border-bottom: 1px solid #d4d4d4;
+  transition: var(--main-transition);
 }
 .events .counter .count .unit {
   padding: 8px 10px;

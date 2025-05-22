@@ -1159,6 +1159,60 @@ ul {
   border-color: transparent white transparent transparent;
 }
 /* End Pricing */
+/* Start Videos */
+.videos {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+.videos .holder {
+  display: flex;
+  border: 1px solid #ddd;
+}
+@media (max-width: 991px) {
+  .videos .holder {
+    flex-direction: column-reverse;
+  }
+}
+.videos .list {
+  min-width: 300px;
+  background-color: white;
+}
+.videos .list .title {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  background-color: #f4f4f4;
+}
+.videos .list ul li {
+  padding: 20px;
+  border-top: 1px solid #ddd;
+  cursor: pointer;
+  transition: var(--main-transition);
+}
+.videos .list ul li:hover {
+  color: var(--main-color);
+}
+.videos .list ul li .length {
+  display: block;
+  color: #777;
+  margin-top: 10px;
+}
+.videos .video {
+  background-color: #e2e2e2;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.videos .video .image img {
+  max-width: 100%;
+}
+.videos .video .video-title {
+  background-color: white;
+  padding: 20px;
+}
+/* End Videos */
 /* Start Animations*/
 @keyframes land-up-down {
   0% {

@@ -1213,6 +1213,83 @@ ul {
   padding: 20px;
 }
 /* End Videos */
+/* Start Stats */
+.stats {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  position: relative;
+  background-image: url("../imgs/stats.jpg");
+}
+.stats::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255, 0.95);
+}
+.stats .section-title {
+  font-size: 40px;
+  text-align: center;
+}
+.stats .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+.stats .card {
+  background-color: white;
+  padding: 30px 15px;
+  position: relative;
+  opacity: 0.8;
+}
+.stats .card::before,
+.stats .card::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 0;
+  background-color: var(--main-color);
+  transition: 1s;
+}
+.stats .card::before {
+  left: 0;
+  bottom: 0;
+}
+.stats .card::after {
+  right: 0;
+  top: 0;
+}
+.stats .card:hover {
+  opacity: 1;
+}
+.stats .card:hover::before,
+.stats .card:hover::after {
+  height: 100%;
+}
+.stats .card i,
+.stats .card span {
+  display: block;
+}
+.stats .card i {
+  margin: auto;
+}
+.stats .card span {
+  text-align: center;
+}
+.stats .card .number {
+  font-size: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.stats .card .label {
+  font-weight: bold;
+  color: var(--main-color);
+  font-style: italic;
+}
+/* End Stats */
 /* Start Animations*/
 @keyframes land-up-down {
   0% {
